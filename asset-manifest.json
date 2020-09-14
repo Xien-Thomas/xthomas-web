@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/xthomas-web/static/css/main.15184d7c.chunk.css",
+    "main.js": "/xthomas-web/static/js/main.1dd9c076.chunk.js",
+    "main.js.map": "/xthomas-web/static/js/main.1dd9c076.chunk.js.map",
+    "runtime-main.js": "/xthomas-web/static/js/runtime-main.6a2ae459.js",
+    "runtime-main.js.map": "/xthomas-web/static/js/runtime-main.6a2ae459.js.map",
+    "static/js/2.bc348b1e.chunk.js": "/xthomas-web/static/js/2.bc348b1e.chunk.js",
+    "static/js/2.bc348b1e.chunk.js.map": "/xthomas-web/static/js/2.bc348b1e.chunk.js.map",
+    "index.html": "/xthomas-web/index.html",
+    "precache-manifest.c91d1abeaa5512c2dcf3a3808ea724cb.js": "/xthomas-web/precache-manifest.c91d1abeaa5512c2dcf3a3808ea724cb.js",
+    "service-worker.js": "/xthomas-web/service-worker.js",
+    "static/css/main.15184d7c.chunk.css.map": "/xthomas-web/static/css/main.15184d7c.chunk.css.map",
+    "static/js/2.bc348b1e.chunk.js.LICENSE.txt": "/xthomas-web/static/js/2.bc348b1e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a2ae459.js",
+    "static/js/2.bc348b1e.chunk.js",
+    "static/css/main.15184d7c.chunk.css",
+    "static/js/main.1dd9c076.chunk.js"
+  ]
+}
