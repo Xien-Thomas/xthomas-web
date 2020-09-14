@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/xthomas-web" exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/Contact" exact component={Contact} />
         </Switch>
