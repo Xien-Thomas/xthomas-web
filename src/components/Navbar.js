@@ -33,8 +33,8 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          Xien
-          <img src={logo} alt="website logo" />
+          Xien Thomas
+          {/* <img src={logo} alt="website logo" /> */}
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <FontAwesomeIcon icon={click ? faTimes : faBars} />
