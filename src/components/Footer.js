@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { Button } from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,17 +7,43 @@ import { faTwitch } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import logo from "./logo.png";
 import "./Footer.css";
-function Footer() {
+
+import { db } from "../firebase";
+
+const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const [loader, setLoader] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoader(true);
+
+    db.collection("contacts")
+      .add({
+        email: email,
+      })
+      .then(() => {
+        alert("You have successfully subscribed!");
+        setLoader(false);
+      })
+      .catch((error) => {
+        alert(error.message);
+        setLoader(false);
+      });
+    setEmail("");
+  };
   return (
     <div className="footer-container">
       <section className="footer-sub">
         <p className="footer-sub-heading">Subscribe for Blogs!</p>
         <p className="footer-sub-text">You can unsubscribe anytime!</p>
         <div className="input-areas">
-          <form>
+          <form onSubmit={handleSubmit}>
             <input
               type="email"
               name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Your Email"
               className="footer-input"
             />
@@ -63,6 +89,6 @@ function Footer() {
       </section>
     </div>
   );
-}
+};
 
 export default Footer;

@@ -1,24 +1,28 @@
-import firebase from "firebase/app";
+import firebase from "firebase";
+
 import database from "firebase/database";
 
-const config = {
+var firebaseApp = firebase.initializeApp({
   apiKey: "AIzaSyDS8IkSc8yD2eAjmmuwMZZphtJSF5EL7Zo",
   authDomain: "personal-newsletter-3fd7e.firebaseapp.com",
-  databaseURL: "<YOUR-DATABASE-URL>",
-  projectId: "<YOUR-PROJECT-ID>",
-  storageBucket: "<YOUR-STORAGE-BUCKET>",
-  messagingSenderId: "<YOUR-MESSAGE-SENDER-ID>",
-  appId: "<YOUR-APP-ID>",
-};
+  databaseURL: "https://personal-newsletter-3fd7e.firebaseio.com",
+  projectId: "personal-newsletter-3fd7e",
+  storageBucket: "personal-newsletter-3fd7e.appspot.com",
+  messagingSenderId: "717178030307",
+  appId: "1:717178030307:web:ffd2bc464b8c6f9d971dd6",
+});
 
-let firebaseCache;
+var db = firebaseApp.firestore();
 
-export const getFirebase = () => {
-  if (firebaseCache) {
-    return firebaseCache;
-  }
+export { db };
 
-  firebase.initializeApp(config);
-  firebaseCache = firebase;
-  return firebase;
-};
+// let firebaseCache;
+
+// export const getFirebase = () => {
+//   if (firebaseCache) {
+//     return firebaseCache;
+//   }
+
+//   firebaseCache = firebase;
+//   return firebase;
+// };
