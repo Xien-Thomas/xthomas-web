@@ -69,10 +69,10 @@ const Footer = () => {
       <section className="social-media">
         <div className="social-media-wrap">
           <div className="footer-logo">
-            <img src={logo} alt="website logo" />
+            {/* <img src={logo} alt="website logo" /> */}
           </div>
           <small className="website-rights">
-            Made by Xien Thomas 2020 using React JS
+            Made by Xien Thomas 2021 using React JS
           </small>
           <div className="social-icons">
             <Link className="social-icon-link instagram" to="/" target="_blank">

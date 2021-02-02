@@ -33,7 +33,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          Xien Thomas
+          Xien
           {/* <img src={logo} alt="website logo" /> */}
         </Link>
         <div className="menu-icon" onClick={handleClick}>
