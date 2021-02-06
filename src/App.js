@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
-import Board from "./components/pages/Board";
+
 
 import "./App.css";
 

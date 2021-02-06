@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { ReactPhotoCollage } from "react-photo-collage"
+import Longnav from "./Longnav.js"
 import selfpic from "../../website photos/selfie.jpg"
 import image1 from "../../website photos/art-folder/arcade-girl1.png"
 import image2 from "../../website photos/art-folder/bloodbourne.png"
@@ -51,8 +52,10 @@ class About extends Component {
               with information given to me and create some type of output.<br></br><br></br> 
 
               Currently I am working on personal project both Digital Art and Programming!
-              Check more in my project channel.
+              Check more out my projects below!
             </p>
+            
+            <Longnav />
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "./logo.png";
+// import logo from "./logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+// import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 // fontawesome.library.add(faCoffee);
 

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faTwitch } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import logo from "./logo.png";
+// import logo from "./logo.png";
 import "./Footer.css";
 
 import { db } from "../firebase";
